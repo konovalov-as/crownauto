@@ -1,0 +1,9 @@
+<svg class="triangle-mask" viewBox="0 0 100 10" preserveAspectRatio="none">
+    <defs>
+        <mask id="triangle-mask">
+            <rect width="100" height="10" fill="white"/>
+            <polygon points="50,10 0,0 100,0" fill="black"/>
+        </mask>
+    </defs>
+    <rect width="100" height="10" fill="currentColor" mask="url(#triangle-mask)"/>
+</svg>
