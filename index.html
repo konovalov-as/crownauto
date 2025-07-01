@@ -17,44 +17,9 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="container"><span class="header__logo">
-            <picture>
-              <source media="(min-width: undefined)" srcset="img/svg/logo/logo-desktop.svg">
-              <source media="(min-width: undefined)" srcset="img/svg/logo/logo-tablet.svg"><img src="img/content/logo.png" alt="Студия пошива авточехлов" width="96" height="96" loading="lazy">
-            </picture></span>
-          <nav class="main-nav">
-            <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
-              <svg width="20" height="20" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-burger"></use>
-              </svg>
-            </button>
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list">
-                <li class="main-nav__item"><span class="main-nav__link is-active">Главная</span>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#advanteges">Преимущества</a>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#our-works">Наши работы</a>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#our-principles">Наши принципы</a>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#model-covers">Модельные авточехлы</a>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#frame-covers">Каркасные авточехлы</a>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#accessories">Аксессуары</a>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#delivery">Доставка и оплата</a>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#prices">Цены</a>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#about-us">О студии</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <div class="header__callback"> <a class="header__phone" href="tel:+79129990086">+7 (912) 999-00-86</a>
-            <button class="header__callback-btn" type="button">
+        <div class="container"><span class="header__logo logo"><span class="logo__main">CRown<span class="logo__second">Auto</span></span></span>
+          <div class="header__callback"><a class="header__phone" href="tel:+79129990086">+7 (912) 999-00-86</a>
+            <button class="btn header__callback-btn" type="button">
               <svg width="24" height="24" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg><span>Перезвоните мне </span>
@@ -65,8 +30,13 @@
       <main>
         <section class="intro">
           <div class="container">
-            <h1 class="title-h1">Индивидуальные чехлы для вашего авто готовые и под заказ: Защита, Комфорт, Стиль</h1>
-            <p class="intro__subtitle">Забудьте о стандартных решениях! Эксклюзивный пошив и профессиональная установка чехлов из качественных материалов. Продлите жизнь салону и выразите свой характер. Бесплатный замер!</p>
+            <h1 class="title-h1">Авточехлы<span>готовые и под заказ</span></h1>
+            <p class="intro__subtitle">Создай салон своей мечты!</p>
+          </div>
+          <div class="intro__cloud-mask">
+            <svg aria-hidden="true">
+              <use xlink:href="img/sprite.svg#mask-cloud"></use>
+            </svg>
           </div>
         </section>
         <section class="advantages" id="advanteges">
@@ -131,57 +101,71 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide our-works__picture">
                   <div class="our-works__slide">
-                    <p>Индивидуальный пошив</p><img src="img/content/slide01.jpg" srcset="img/content/slide01@2x.jpg 2x" alt="Индивидуальный пошив 1">
+                    <p class="our-works__label">Индивидуальный пошив</p>
+                    <div class="our-works__img"><img src="img/content/slide01.jpg" srcset="img/content/slide01@2x.jpg 2x" alt="Индивидуальный пошив 1">
+                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="our-works__slide">
-                    <p>Индивидуальный пошив</p><img src="img/content/slide02.jpg" srcset="img/content/slide02@2x.jpg 2x" alt="Индивидуальный пошив 2">
+                    <p class="our-works__label">Индивидуальный пошив</p>
+                    <div class="our-works__img"><img src="img/content/slide02.jpg" srcset="img/content/slide02@2x.jpg 2x" alt="Индивидуальный пошив 2">
+                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="our-works__slide">
-                    <p>Индивидуальный пошив</p><img src="img/content/slide03.jpg" srcset="img/content/slide03@2x.jpg 2x" alt="Индивидуальный пошив 3">
+                    <p class="our-works__label">Индивидуальный пошив</p>
+                    <div class="our-works__img"><img src="img/content/slide03.jpg" srcset="img/content/slide03@2x.jpg 2x" alt="Индивидуальный пошив 3">
+                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="our-works__slide">
-                    <p>Каркасные чехлы</p><img src="img/content/slide04.jpg" srcset="img/content/slide04@2x.jpg 2x" alt="Каркасные чехлы 1">
+                    <p class="our-works__label">Каркасные чехлы</p>
+                    <div class="our-works__img"><img src="img/content/slide04.jpg" srcset="img/content/slide04@2x.jpg 2x" alt="Каркасные чехлы 1">
+                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="our-works__slide">
-                    <p>Каркасные чехлы</p><img src="img/content/slide05.jpg" srcset="img/content/slide05@2x.jpg 2x" alt="Каркасные чехлы 2">
+                    <p class="our-works__label">Каркасные чехлы</p>
+                    <div class="our-works__img"><img src="img/content/slide05.jpg" srcset="img/content/slide05@2x.jpg 2x" alt="Каркасные чехлы 2">
+                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="our-works__slide">
-                    <p>Каркасные чехлы</p><img src="img/content/slide06.jpg" srcset="img/content/slide06@2x.jpg 2x" alt="Каркасные чехлы 3">
+                    <p class="our-works__label">Каркасные чехлы</p>
+                    <div class="our-works__img"><img src="img/content/slide06.jpg" srcset="img/content/slide06@2x.jpg 2x" alt="Каркасные чехлы 3">
+                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="our-works__slide">
-                    <p>Эконом пошив</p><img src="img/content/slide07.jpg" srcset="img/content/slide07@2x.jpg 2x" alt="Эконом пошив 1">
+                    <p class="our-works__label">Эконом пошив</p>
+                    <div class="our-works__img"><img src="img/content/slide07.jpg" srcset="img/content/slide07@2x.jpg 2x" alt="Эконом пошив 1">
+                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="our-works__slide">
-                    <p>Эконом пошив</p><img src="img/content/slide08.jpg" srcset="img/content/slide08@2x.jpg 2x" alt="Эконом пошив 2">
+                    <p class="our-works__label">Эконом пошив</p>
+                    <div class="our-works__img"><img src="img/content/slide08.jpg" srcset="img/content/slide08@2x.jpg 2x" alt="Эконом пошив 2">
+                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="our-works__slide">
-                    <p>Эконом пошив</p><img src="img/content/slide09.jpg" srcset="img/content/slide09@2x.jpg 2x" alt="Эконом пошив 3">
+                    <p class="our-works__label">Эконом пошив</p>
+                    <div class="our-works__img"><img src="img/content/slide09.jpg" srcset="img/content/slide09@2x.jpg 2x" alt="Эконом пошив 3">
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
+              <div class="swiper-pagination our-works__pagination"></div>
             </div>
-            <div>
-              <p>Каркасные авточехлы – это модификация модельных. Они так же шьются по индивидуальным лекалам, но дополнительно комплектуется металлическим каркасом, который повторяет оригинальные швы сидения. Материал каркаса обладает достаточной жесткостью и хорошо сохраняет форму. При изготовлении каркасных чехлов используется экокожа марки strong Fiat BMW и Fiat nappa. А в качестве дополнения можно использовать Алькантару марки премиум.Каркасные авточехлы – это модификация модельных. Они так же шьются по индивидуальным лекалам, но дополнительно комплектуется металлическим каркасом, который повторяет оригинальные швы сидения. Материал каркаса обладает достаточной жесткостью и хорошо сохраняет форму. При изготовлении каркасных чехлов используется экокожа марки strong Fiat BMW и Fiat nappa. А в качестве дополнения можно использовать Алькантару марки премиум</p>
-              <p class="our-works__subtitle">Каркасные авточехлы от 20.000₽</p>
-            </div>
-            <p>*уточнять лекало на Ваш автомобиль у наших специалистов</p>
+            <p class="car-covers__important"><span>*уточнять лекало на Ваш автомобиль у наших специалистов</span></p>
           </div>
         </section>
         <section class="faq" id="faq" data-tabs="element1">
@@ -191,7 +175,7 @@
               <div class="accordion" data-accordion="parent">
                 <div class="accordion__element faq__accordion-element" data-accordion="element">
                   <button class="accordion__button faq__accordion-btn faq__accordion-btn--border" type="button" data-accordion="button">
-                    <svg width="24" height="24" aria-hidden="true">
+                    <svg width="32" height="32" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
                     </svg>Интересный вопрос по материалам
                   </button>
@@ -203,7 +187,7 @@
                 </div>
                 <div class="accordion__element faq__accordion-element" data-accordion="element">
                   <button class="accordion__button faq__accordion-btn faq__accordion-btn--border" type="button" data-accordion="button">
-                    <svg width="24" height="24" aria-hidden="true">
+                    <svg width="32" height="32" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
                     </svg>Есть ли доставка?
                   </button>
@@ -215,7 +199,7 @@
                 </div>
                 <div class="accordion__element faq__accordion-element" data-accordion="element">
                   <button class="accordion__button faq__accordion-btn faq__accordion-btn--border" type="button" data-accordion="button">
-                    <svg width="24" height="24" aria-hidden="true">
+                    <svg width="32" height="32" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
                     </svg>Хочу индивидуальный дизайн. Это возможно?
                   </button>
@@ -247,8 +231,8 @@
             <h2 class="title-h2 title-h2--white">Модельные авточехлы</h2>
             <div class="car-covers__box"> 
               <div class="car-covers__card">
-                <p>Индивидуальный пошив от 11.500₽</p>
-                <p>Цена комплекта зависит от выбранного вами дизайна пошива</p>
+                <h3 class="title-h3">Индивидуальный пошив от 11.500₽</h3>
+                <p class="car-covers__subtitle">Цена комплекта зависит от выбранного вами дизайна пошива</p>
                 <div class="swiper modelSwiper">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide car-covers__slide"><img src="img/content/model01.jpg" srcset="img/content/model01@2x.jpg 2x" alt="Индивидуальный пошив 1">
@@ -280,8 +264,8 @@
                 </div>
               </div>
               <div class="car-covers__card">
-                <p>Эконом пошив от 5.500₽</p>
-                <p>Цена комплекта зависит от выбранного вами дизайна пошива</p>
+                <h3 class="title-h3">Эконом пошив от 5.500₽</h3>
+                <p class="car-covers__subtitle">Цена комплекта зависит от выбранного вами дизайна пошива</p>
                 <div class="swiper modelSwiper">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide car-covers__slide"><img src="img/content/slide07.jpg" srcset="img/content/slide07@2x.jpg 2x" alt="Эконом пошив 1">
@@ -295,8 +279,8 @@
                 </div>
               </div>
             </div>
-            <p class="model-car-covers__text">Модельные авточехлы создаются исключительно под конкретные модели автомобилей. Они, как правило, имеют более долгий срок эксплуатации, отличаются идеальной посадкой. При их создании в учёт берутся все геометрические особенности кресел, делаются высокоточные прорези, имеются специальные швы для подушек безопасности и т.д. В качестве материалов используются уже всем известный основной компонент экокожа Oregon Premium с толщиной 1.2mm, а также перфорированная экокожа и текстильные вставки ввиде замши (аналог Алькантары) и велюр.</p>
-            <p class="car-covers__important">*уточнять лекало на Ваш автомобиль у наших специалистов</p>
+            <p class="car-covers__description"><strong>Модельные авточехлы </strong>создаются исключительно под конкретные модели автомобилей. Они, как правило, имеют более долгий срок эксплуатации, отличаются идеальной посадкой. При их создании в учёт берутся все геометрические особенности кресел, делаются высокоточные прорези, имеются специальные швы для подушек безопасности и т.д. В качестве материалов используются уже всем известный основной компонент экокожа Oregon Premium с толщиной 1.2mm, а также перфорированная экокожа и текстильные вставки ввиде замши (аналог Алькантары) и велюр.</p>
+            <p class="car-covers__important"><span>*уточнять лекало на Ваш автомобиль у наших специалистов</span></p>
           </div>
         </section>
         <section class="car-covers car-covers--color" id="model-covers">
@@ -304,8 +288,8 @@
             <h2 class="title-h2">Каркасные авточехлы</h2>
             <div class="car-covers__box"> 
               <div class="car-covers__card car-covers__card--color">
-                <p>Каркасные авточехлы от 20.000₽</p>
-                <p>Цена комплекта зависит от выбранного вами дизайна пошива</p>
+                <h3 class="title-h3">Каркасные авточехлы от 20.000₽</h3>
+                <p class="car-covers__subtitle">Цена комплекта зависит от выбранного вами дизайна пошива</p>
                 <div class="swiper modelSwiper">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide car-covers__slide"><img src="img/content/slide10.jpg" srcset="img/content/slide10@2x.jpg 2x" alt="Каркасные авточехлы 1">
@@ -330,99 +314,202 @@
                 </ul>
               </div>
             </div>
-            <div class="car-covers__box-2">
-              <div class="car-covers__box-2-list" style="display: flex; gap: 20px; justify-content: space-evenly; margin-bottom: 30px;">
-                <div class="car-covers__box-2-item" style="width: 300px; background: #191919; color: white; border-radius: 12px; padding: 20px;"><strong>Strong </strong>
-                  <p>стоимость комплекта 20.000₽</p>
+            <div class="car-covers__box">
+              <div class="car-covers__box-list">
+                <div class="car-covers__box-item"><strong>Strong </strong>
+                  <p class="car-covers__box-item-price">стоимость комплекта: 20.000₽</p>
                 </div>
-                <div class="car-covers__box-2-item" style="width: 300px; background: #191919; color: white; border-radius: 12px; padding: 20px;"><strong>Fiat BMW</strong>
-                  <p>стоимость комплекта 26.000₽</p>
+                <div class="car-covers__box-item"><strong>Fiat BMW</strong>
+                  <p class="car-covers__box-item-price">стоимость комплекта: 26.000₽</p>
                 </div>
-                <div class="car-covers__box-2-item" style="width: 300px; background: #191919; color: white; border-radius: 12px; padding: 20px;"><strong>Fiat Nappa</strong>
-                  <p>стоимость комплекта 26.000₽</p>
+                <div class="car-covers__box-item"><strong>Fiat Nappa</strong>
+                  <p class="car-covers__box-item-price">стоимость комплекта: 26.000₽</p>
                 </div>
-                <div class="car-covers__box-2-item" style="width: 300px; background: #191919; color: white; border-radius: 12px; padding: 20px;"><strong>Алькантара</strong>
-                  <p>стоимость комплекта -₽</p>
+                <div class="car-covers__box-item"><strong>Алькантара</strong>
+                  <p class="car-covers__box-item-price">стоимость комплекта: по запросу</p>
                 </div>
               </div>
             </div>
-            <p class="model-car-covers__text">Каркасные авточехлы – это модификация модельных. Они так же шьются по индивидуальным лекалам, но дополнительно комплектуется металлическим каркасом, который повторяет оригинальные швы сидения. Материал каркаса обладает достаточной жесткостью и хорошо сохраняет форму. При изготовлении каркасных чехлов используется экокожа марки strong Fiat BMW и Fiat nappa. А в качестве дополнения можно использовать Алькантару марки премиум</p>
-            <p class="car-covers__important">*уточнять лекало на Ваш автомобиль у наших специалистов</p>
+            <div class="our-works__description">
+              <p class="our-works__text"><strong>Каркасные авточехлы </strong>– это модификация модельных. Они так же шьются по индивидуальным лекалам, но дополнительно комплектуется металлическим каркасом, который повторяет оригинальные швы сидения. Материал каркаса обладает достаточной жесткостью и хорошо сохраняет форму. При изготовлении каркасных чехлов используется экокожа марки strong Fiat BMW и Fiat nappa. А в качестве дополнения можно использовать Алькантару марки премиум.</p>
+              <p class="our-works__subtitle">Каркасные авточехлы от 20.000₽</p>
+            </div>
+            <p class="car-covers__important"><span>*уточнять лекало на Ваш автомобиль у наших специалистов</span></p>
+            <div class="car-covers__callback">
+              <button class="btn btn--light" type="button">Перезвоните мне</button>
+            </div>
           </div>
         </section>
         <section class="accessories" id="accessories">
           <div class="container">
             <h2 class="title-h2 title-h2--white">Аксессуары</h2>
-            <div class="accessories__list" style="display: flex; gap: 20px; justify-content: space-evenly; margin-bottom: 30px; color: #191919">
-              <div class="accessories__item" style="width: 300px; background: #ffd500; border-radius: 12px; padding: 20px;"><strong>5 D ковры из экокожи</strong>
-                <p>От 11.000₽</p>
+            <div class="accessories__list">
+              <div class="accessories__item"><strong>5 D ковры из экокожи</strong>
+                <p class="accessories__item-text">От 11.000₽</p>
               </div>
-              <div class="accessories__item" style="width: 300px; background: #ffd500; border-radius: 12px; padding: 20px;"><strong>3 D ковры</strong>
-                <p>Материал Ворс или Эва</p>
-                <p>От 5.500₽</p>
+              <div class="accessories__item"><strong>3 D ковры</strong>
+                <p class="accessories__item-text">Материал Ворс или Эва</p>
+                <p class="accessories__item-text">От 5.500₽</p>
               </div>
-              <div class="accessories__item" style="width: 300px; background: #ffd500; border-radius: 12px; padding: 20px;"><strong>5 D ковры из экокожи</strong>
-                <p>От 11.000₽</p>
+              <div class="accessories__item"><strong>5 D ковры из экокожи</strong>
+                <p class="accessories__item-text">От 11.000₽</p>
               </div>
-              <div class="accessories__item" style="width: 300px; background: #ffd500; border-radius: 12px; padding: 20px;"><strong>Ковры премиум ворс</strong>
-                <p>От 10.000₽</p>
+              <div class="accessories__item"><strong>Ковры премиум ворс</strong>
+                <p class="accessories__item-text">От 10.000₽</p>
               </div>
-              <div class="accessories__item" style="width: 300px; background: #ffd500; border-radius: 12px; padding: 20px;"><strong>Ковры ЭВА</strong>
-                <p>От 3.500₽</p>
+              <div class="accessories__item"><strong>Ковры ЭВА</strong>
+                <p class="accessories__item-text">От 3.500₽</p>
               </div>
             </div>
-            <div class="swiper mySwiper our-works__slider">
+            <div class="swiper mySwiper our-works__slider accessories__slider">
               <div class="swiper-wrapper">
-                <div class="swiper-slide our-works__picture">
-                  <div class="our-works__slide">
-                    <p>Индивидуальный пошив</p><img src="img/content/accessories01.jpg" srcset="img/content/accessories01@2x.jpg 2x" alt="Аксессуар 1">
+                <div class="swiper-slide">
+                  <div class="accessories__slide">
+                    <div class="accessories__img"><img src="img/content/accessories01.jpg" srcset="img/content/accessories01@2x.jpg 2x" alt="Аксессуар 1">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="accessories__slide">
+                    <div class="accessories__img"><img src="img/content/accessories02.jpg" srcset="img/content/accessories02@2x.jpg 2x" alt="Аксессуар 2">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="accessories__slide">
+                    <div class="accessories__img"><img src="img/content/accessories03.jpg" srcset="img/content/accessories03@2x.jpg 2x" alt="Аксессуар 3">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="accessories__slide">
+                    <div class="accessories__img"><img src="img/content/accessories04.jpg" srcset="img/content/accessories04@2x.jpg 2x" alt="Аксессуар 4">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="accessories__slide">
+                    <div class="accessories__img"><img src="img/content/accessories05.jpg" srcset="img/content/accessories05@2x.jpg 2x" alt="Аксессуар 5">
+                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="our-works__slide">
-                    <p>Индивидуальный пошив</p><img src="img/content/accessories02.jpg" srcset="img/content/accessories02@2x.jpg 2x" alt="Аксессуар 2">
+                    <div class="accessories__img"><img src="img/content/accessories06.jpg" srcset="img/content/accessories06@2x.jpg 2x" alt="Аксессуар 6">
+                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="our-works__slide">
-                    <p>Индивидуальный пошив</p><img src="img/content/accessories03.jpg" srcset="img/content/accessories03@2x.jpg 2x" alt="Аксессуар 3">
+                    <div class="accessories__img"><img src="img/content/accessories07.jpg" srcset="img/content/accessories07@2x.jpg 2x" alt="Аксессуар 7">
+                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="our-works__slide">
-                    <p>Каркасные чехлы</p><img src="img/content/accessories04.jpg" srcset="img/content/accessories04@2x.jpg 2x" alt="Аксессуар 4">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="our-works__slide">
-                    <p>Каркасные чехлы</p><img src="img/content/accessories05.jpg" srcset="img/content/accessories05@2x.jpg 2x" alt="Аксессуар 5">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="our-works__slide">
-                    <p>Каркасные чехлы</p><img src="img/content/accessories06.jpg" srcset="img/content/accessories06@2x.jpg 2x" alt="Аксессуар 6">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="our-works__slide">
-                    <p>Эконом пошив</p><img src="img/content/accessories07.jpg" srcset="img/content/accessories07@2x.jpg 2x" alt="Аксессуар 7">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="our-works__slide">
-                    <p>Эконом пошив</p><img src="img/content/accessories08.jpg" srcset="img/content/accessories08@2x.jpg 2x" alt="Аксессуар 8">
+                    <div class="accessories__img"><img src="img/content/accessories08.jpg" srcset="img/content/accessories08@2x.jpg 2x" alt="Аксессуар 8">
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
+              <div class="swiper-pagination accessories__pagination"></div>
             </div>
-            <p class="car-covers__important">*уточнять лекало на Ваш автомобиль у наших специалистов</p>
+            <p class="car-covers__important"><span>*уточнять лекало на Ваш автомобиль у наших специалистов</span></p>
           </div>
         </section>
         <section class="delivery" id="delivery">
           <div class="container">
-            <h2 class="title-h2">Доставка и оплата</h2>
-            <p class="delivery__subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus voluptate expedita est dolores omnis minus quo non, et illo blanditiis quibusdam corrupti beatae possimus dicta laborum sequi officiis sapiente cupiditate?</p>
+            <h2 class="title-h2">Доставка</h2>
+            <p class="delivery__subtitle">Получите заказ удобным способом</p>
+            <div class="delivery__box">
+              <ul class="delivery__list">
+                <li class="delivery__item">
+                  <div class="delivery__item-wrap"><span class="delivery__icon delivery__icon--self">
+                      <svg width="40" height="40" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-self-pickup"></use>
+                      </svg></span>
+                    <h3 class="title-h3">Самовывоз</h3>
+                    <p class="delivery__status">Бесплатно</p>
+                    <p class="delivery__text">из мастерской</p>
+                    <p class="delivery__point">ул. Пржевальского, 36 ст1​5 бокс, Район КПД м-н, Ленинский округ, Тюмень, 625023</p>
+                    <p class="delivery__detail-info">
+                      <svg width="24" height="24" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-time"></use>
+                      </svg>Забрать можно через 2 дня после замера
+                    </p>
+                  </div>
+                </li>
+                <li class="delivery__item">
+                  <div class="delivery__item-wrap delivery__item-wrap--popular"><span class="delivery__label">Популярно</span><span class="delivery__icon delivery__icon--truck">
+                      <svg width="40" height="40" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-truck"></use>
+                      </svg></span>
+                    <h3 class="title-h3">По городу</h3>
+                    <p class="delivery__status">По договоренности</p>
+                    <p class="delivery__text">Доставка за 24 часа</p>
+                    <p class="delivery__detail-info">
+                      <svg width="24" height="24" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-time"></use>
+                      </svg>В пределах города
+                    </p>
+                  </div>
+                </li>
+                <li class="delivery__item">
+                  <div class="delivery__item-wrap"><span class="delivery__icon delivery__icon--box">
+                      <svg width="40" height="40" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-box"></use>
+                      </svg></span>
+                    <h3 class="title-h3">В другие города</h3>
+                    <p class="delivery__status">Бесплатно довезем до выбранной вами транспортной компании</p>
+                    <p class="delivery__point">Стоимость рассчитываем индивидуально</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="delivery__additional-info"> 
+                <p class="delivery__additional-title">
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-attention"></use>
+                  </svg>Важная информация
+                </p>
+                <p class="delivery__additional-text">Важная информация по доставке</p>
+              </div>
+            </div>
+            <h2 class="title-h2">Оплата</h2>
+            <p class="delivery__subtitle">Оплатите заказ удобным способом</p>
+            <div class="delivery__box">
+              <ul class="delivery__list">
+                <li class="delivery__item">
+                  <div class="delivery__item-wrap pay-type"><span class="delivery__icon">
+                      <svg width="64" height="64" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-debit-card"></use>
+                      </svg></span>
+                    <h3 class="title-h3 pay-type__title">В фирменном магазине или у официального представителя</h3>
+                    <ul class="pay-type__list">
+                      <li class="pay-type__item">Наличные</li>
+                      <li class="pay-type__item">Банковская карта</li>
+                      <li class="pay-type__item">QR-перевод (СБП)</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="delivery__item">
+                  <div class="delivery__item-wrap pay-type"><span class="delivery__icon">
+                      <svg width="64" height="64" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-online-pay"></use>
+                      </svg></span>
+                    <h3 class="title-h3 pay-type__title">Онлайн</h3>
+                    <ul class="pay-type__list">
+                      <li class="pay-type__item">QR-перевод (СБП)</li>
+                      <li class="pay-type__item">Все заказы изготавливаются после 100% оплаты</li>
+                      <li class="pay-type__item">По реквизитам от вашего менеджера</li>
+                      <li class="pay-type__item">QR-перевод (СБП)</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="car-covers__callback">
+              <button class="btn btn--light" type="button">Перезвоните мне</button>
+            </div>
           </div>
         </section>
         <section class="prices" id="prices">
@@ -439,23 +526,32 @@
         </section>
         <section class="callback" id="callback">
           <div class="container">
-            <h2 class="title-h2">Есть вопрос? Мы Вам перезвоним</h2>
+            <h2 class="title-h2">Есть вопрос? Мы можем перезвонить</h2>
             <div class="callback__form">
-              <form>
+              <form></form>
+              <div class="callback__row">
                 <label>Как вас зовут?
                   <input type="text" placeholder="Ваше имя">
                 </label>
+              </div>
+              <div class="callback__row">
                 <label>Ваш телефон
                   <input type="phone" placeholder="Ваше телефон" required>
                 </label>
+              </div>
+              <div class="callback__row">
                 <label>Ваш email
                   <input type="text" placeholder="Ваш email">
                 </label>
+              </div>
+              <div class="callback__row">
                 <label>Какой у вас вопрос?
                   <textarea></textarea>
                 </label>
-                <button type="submit">Перезвоните мне</button>
-              </form>
+              </div>
+              <div class="callback__submit">
+                <button class="btn btn--light" type="submit">Перезвоните мне</button>
+              </div>
             </div>
           </div>
         </section>
@@ -466,11 +562,11 @@
             <p>© 2025 CRownAuto72. Все права защищены.</p>
             <ul class="footer__social-list">
               <li class="footer__social-item"><a class="footer__social-link" href="https://t.me/+79129990086" aria-label="Telegram" target="_blank">
-                  <svg width="24" height="24" aria-hidden="true">
+                  <svg width="32" height="32" aria-hidden="true">
                     <use xlink:href="img/sprite.svg#icon-telegram"></use>
                   </svg></a></li>
               <li class="footer__social-item"><a class="footer__social-link" href="https://vk.com/club206682433" aria-label="Vk" target="_blank">
-                  <svg width="24" height="24" aria-hidden="true">
+                  <svg width="32" height="32" aria-hidden="true">
                     <use xlink:href="img/sprite.svg#icon-vk"></use>
                   </svg></a></li>
             </ul>
